@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+}
+
+header {
+  background: #fff9f0;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 1px 1px 10px 2px #dadde1;
+}
+
+#navbar {
+  list-style: none;
+  display: flex;
+  justify-content: end;
+  padding-right: 40px;
+}
+
+#navbar li {
+  position: relative;
+}
+
+#logo {
+  width: 150px;
+  height: 38px;
+  margin-top: 12px;
+  margin-left: 50px;
+  text-align: left;
+}
+
+#navbar li a {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #b18f79;
+  text-decoration: none;
+  text-align: right;
+  transition: all 200ms ease-in-out;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+  color: #7c5b45;
+  font-weight: 300;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after {
+  content: "";
+  width: 28%;
+  height: 2px;
+  background: #7c5b45;
+  position: absolute;
+  bottom: -1px;
+  left: 30px;
+}
+
+#navbar li {
+  padding: 0px 30px;
+  margin-top: 6px;
+}
+
+#navbar #cart {
+  margin-top: 0;
+}
